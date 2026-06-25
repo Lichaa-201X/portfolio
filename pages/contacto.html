@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Contacto</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/contacto.css">
+</head>
+<body class="page-inner">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Portfolio</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+    </div>
+    <div class="side-menu" id="sideMenu" aria-hidden="true">
+      <button class="close-menu" aria-label="Cerrar menú">&times;</button>
+      <nav class="side-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+    </div>
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+  </header>
+
+  <main class="container contact-page">
+    <section class="contact-hero">
+      <h1>Hablemos de tu próximo proyecto</h1>
+      <p>Envíame un mensaje y comenzamos a trabajar juntos en una solución digital.</p>
+    </section>
+
+    <section class="contact-form-section">
+      <form id="contactForm" class="contact-form">
+        <div class="field-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+        </div>
+        <div class="field-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Cuéntame los detalles..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        <p id="formResponse" class="form-response"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Portfolio. Gracias por tu interés.</p>
+      <a href="../index.html">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/contacto.js"></script>
+</body>
+</html>

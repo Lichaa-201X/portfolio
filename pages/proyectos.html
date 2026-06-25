@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Proyectos</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/proyectos.css">
+</head>
+<body class="page-inner">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Portfolio</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="proyectos.html" class="active">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+    <div class="side-menu" id="sideMenu" aria-hidden="true">
+      <button class="close-menu" aria-label="Cerrar menú">&times;</button>
+      <nav class="side-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="proyectos.html" class="active">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+  </header>
+
+  <main class="container projects-page">
+    <section class="projects-hero">
+      <h1>Mis Proyectos</h1>
+      <p>Explora los trabajos que he desarrollado para poner en práctica mis habilidades de programación y diseño web.</p>
+    </section>
+
+    <section class="projects-grid">
+      <article class="project-card single-project">
+        <div class="project-image project-image-1"></div>
+        <div class="project-info">
+          <h2>Sitio Web de God of War</h2>
+          <p>Una página dedicada al universo de God of War, detallando la historia de Kratos y Atreus, personajes emblemáticos y el lore de la mitología nórdica y griega. Diseñado con una interfaz responsiva, efectos dinámicos y estilos inmersivos.</p>
+          <p class="project-tech">HTML · CSS · JavaScript</p>
+        </div>
+      </article>
+      <article class="project-card single-project">
+        <div class="project-image project-image-2"></div>
+        <div class="project-info">
+          <h2>Gestor de Remisera</h2>
+          <p>Aplicación desarrollada en Python para una remisera, con gestión de choferes, viajes y cobros. Incluye cálculo de rutas, estados de reserva y reportes diarios para mejorar la operación del servicio.</p>
+          <p class="project-tech">Python · SQLite · Flask</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Portfolio. Explora otros apartados para conocer más.</p>
+      <a href="../index.html">Volver al inicio</a>
+    </div>
+  </footer>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

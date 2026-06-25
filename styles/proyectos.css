@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #161310;
+  color: #f0e8dc;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.site-header {
+  background: rgba(18, 14, 10, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #9f8f7c;
+  font-weight: 600;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #f0e8dc;
+}
+
+.projects-hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+.projects-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.5rem, 4vw, 3.75rem);
+}
+
+.projects-hero p {
+  color: #b8a589;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.85;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  animation: fade-up 0.65s ease both;
+}
+
+.project-image {
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-image-1 { background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80'); }
+.project-image-2 { background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80'); }
+.project-image-3 { background-image: url('https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?auto=format&fit=crop&w=1200&q=80'); }
+
+.project-info {
+  padding: 1rem 0 0;
+}
+
+.project-info h2 {
+  margin: 0 0 1rem;
+  font-size: 1.45rem;
+  color: #f0e8dc;
+}
+
+.project-info p {
+  margin: 0 0 1rem;
+  line-height: 1.8;
+  color: #b8a589;
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  color: #9f8f7c;
+}
+
+.site-footer {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #64748b;
+}
+
+.footer-inner a {
+  color: #8a6e4f;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-inner,
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
